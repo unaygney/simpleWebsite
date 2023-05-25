@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #675D50;
+
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo a {
+    font-size: 18px;
+    color: antiquewhite;
+    padding: 5px 20px;
+    font-weight: 600;
+
+}
+
+.links-logo button{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+
+.links {
+
+    display: flex;
+    margin: 0 10px;
+    width: 800px;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    
+      
+      
+}
+
+.links ul li {
+   
+    padding: 10px;
+
+}
+
+ul li a {
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+ul li a:hover {
+    color: #675D50;
+}
+
+
+/* Section */
+
+section{
+    width: 100vw;
+    height: 90.5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content:center
+
+}
+
+section .content{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 300px;
+    width: 80%;
+}
+
+.content h2{
+    font-size: 50px;
+    font-weight: 600;
+    padding: 20px 5px;
+    text-align: center;
+}
+
+
+.content .buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.buttons button{
+    width: 120px;
+    height: 40px;
+    margin: 30px;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+ 
+}
+
+button:active{
+    transform: scale(1.1);
+}
+
+
+
+.buttons button:first-child{
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+}
+
+.buttons button:first-child:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.buttons button:last-child{
+
+    background-color: #fff;
+    color: black;
+    border: 0;
+}
+
+
+/* 
+end point  768px */
+
+@media (max-width: 768px) {
+
+ul{
+    flex-wrap: wrap;
+}
+    .content h2 {
+        font-size: 30px;
+    }
+
+  }
+  
